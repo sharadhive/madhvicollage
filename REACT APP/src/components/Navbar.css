@@ -1,0 +1,153 @@
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #0066ff;
+  transition: background-color 0.3s ease;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.admission-btn {
+  background: linear-gradient(135deg, #ff6a00, #ee0979) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 0.7rem 1.7rem !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.4) !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer !important;
+  margin-right: 30px !important;
+}
+
+.navbar-right .navbar-logo-right {
+  margin-left: 1rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar-logo,
+  .navbar-logo-right {
+    width: 40px;
+    height: 40px;
+  }
+
+  .admission-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .navbar.navbar-open .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0066ff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar-logo,
+  .navbar-logo-right {
+    width: 30px;
+    height: 30px;
+  }
+
+  .admission-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  color: #ffcc00 !important;
+  text-decoration: underline;
+}

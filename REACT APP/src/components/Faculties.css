@@ -1,0 +1,164 @@
+/* Faculties Section Styles - LIT VERSION */
+.faculties-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  overflow: hidden;
+  animation: fadeInBody 1s ease-in-out;
+}
+
+/* Fancy Header */
+.faculties-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.faculties-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #0056D2, #00bcd4, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.faculties-header p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Faculties Title */
+.faculties-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0056D2;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Table Container Glass Effect */
+.table-responsive {
+  overflow-x: auto;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 0 auto;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1.3s ease-in-out;
+  max-width: 1000px;
+}
+
+/* Table Styles */
+.faculties-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.faculties-table th,
+.faculties-table td {
+  padding: 18px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.faculties-table th {
+  background: linear-gradient(45deg, #0056D2, #00bcd4);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faculties-table td {
+  background: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  color: #222;
+}
+
+.faculties-table tr {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculties-table tr:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: #f5faff;
+}
+
+.faculties-table tr:hover td {
+  animation: pulse 1.2s infinite alternate;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  from { box-shadow: 0 0 0 rgba(0, 123, 255, 0); }
+  to { box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .faculties-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .faculties-header p {
+    font-size: 1rem;
+  }
+
+  .faculties-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .faculties-table th,
+  .faculties-table td {
+    padding: 14px 8px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faculties-header h1 {
+    font-size: 2rem;
+  }
+
+  .faculties-header p {
+    font-size: 0.9rem;
+  }
+
+  .faculties-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .faculties-table th,
+  .faculties-table td {
+    padding: 10px 6px;
+    font-size: 0.88rem;
+  }
+}

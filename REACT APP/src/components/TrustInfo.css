@@ -1,0 +1,128 @@
+/* Trust Info Section */
+.trust-info-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trust-info-header {
+  background-color: #0047ab;
+  padding: 2.5rem 2rem;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trust-info-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.trust-info-header p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.trust-info-content {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.trust-info-table {
+  width: 85%;
+  max-width: 960px;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.trust-info-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.trust-info-table td:first-child {
+  font-weight: 600;
+  background-color: #f2f6fa;
+  width: 40%;
+}
+
+.trust-info-table td:last-child {
+  color: #2b2b2b;
+}
+
+.trust-info-table a {
+  color: #0047ab;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.trust-info-table a:hover {
+  text-decoration: underline;
+  color: #00338d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .trust-info-table {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-info-section {
+    padding: 2rem 1rem;
+  }
+
+  .trust-info-table {
+    width: 95%;
+  }
+
+  .trust-info-header h1 {
+    font-size: 2rem;
+  }
+
+  .trust-info-header p {
+    font-size: 1rem;
+  }
+
+  .trust-info-table td {
+    padding: 0.75rem 1rem;
+  }
+
+  .trust-info-content {
+    padding: 1rem;
+  }
+}
+
+/* Ultra-small screens */
+@media (max-width: 480px) {
+  .trust-info-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .trust-info-header p {
+    font-size: 0.95rem;
+  }
+
+  .trust-info-table td {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .trust-info-section {
+    padding: 1.5rem 1rem;
+  }
+}

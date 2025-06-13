@@ -1,0 +1,159 @@
+/* collegeapp/src/components/Event.css */
+
+.event-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f4f7fc, #e3f2fd);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.full-width-img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  margin-bottom:40px;
+}
+
+.event-header {
+  margin-top:40px;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.event-header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #003973;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.event-header p {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.event-highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.highlight-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-card h2 {
+  font-size: 1.75rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.highlight-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.event-gallery {
+  margin-top: 4rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003973;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-3d-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  perspective: 1000px;
+}
+
+.gallery-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image-wrapper {
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .event-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .event-header p {
+    font-size: 1.1rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-header h1 {
+    font-size: 2rem;
+  }
+
+  .event-header p {
+    font-size: 1rem;
+  }
+
+  .highlight-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-image-wrapper {
+    height: 200px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

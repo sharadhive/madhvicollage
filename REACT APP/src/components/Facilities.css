@@ -1,0 +1,122 @@
+.facilities-custom-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.facilities-custom-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.facilities-custom-title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #ffce00;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Slide wrapper: aligns 3 cards in a row with spacing */
+.facility-slide-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* spacing between cards */
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* Card Styles */
+.facility-card {
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+}
+
+.facility-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.facility-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.facility-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #003973;
+  margin-bottom: 0.75rem;
+}
+
+.facility-card .card-text {
+  flex-grow: 1;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.facility-card .btn {
+  margin-top: auto;
+  align-self: center;
+  width: 80%;
+}
+
+.facility-card .btn-primary:hover {
+  background-color: #0056d1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .facility-card {
+    flex: 0 1 250px;
+  }
+
+  .facility-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .facility-card {
+    flex: 0 1 220px;
+  }
+
+  .facility-img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .facility-card {
+    flex: 0 1 100%;
+  }
+
+  .facility-img {
+    height: 160px;
+  }
+
+  .facility-slide-wrapper {
+    justify-content: center;
+  }
+}
